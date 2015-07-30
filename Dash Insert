@@ -1,0 +1,13 @@
+def DashInsert(str)
+
+  # code goes here
+	a=str.chars
+    b = a.each_cons(2)
+    c = b.map { |i,j| (i.to_i.odd? && j.to_i.odd?) ? i+'-' : i }
+  d = c.join << str[-1]
+  return d
+end
+   
+# keep this function call here 
+# to see how to enter arguments in Ruby scroll down   
+DashInsert(STDIN.gets)           
