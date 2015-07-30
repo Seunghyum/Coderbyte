@@ -1,0 +1,26 @@
+def ArrayAdditionI(arr)
+
+  # code goes here
+  max = 0
+  arr.each do |p|
+    if arr[0] <= p
+      max = p
+  	end
+  end
+  sum=0
+  arr.each do |p|
+    sum+=p
+  end
+  
+  all =sum-max
+  
+  if all == sum
+    return true
+  else
+    return false
+  end  
+end
+   
+# keep this function call here 
+# to see how to enter arguments in Ruby scroll down   
+ArrayAdditionI(STDIN.gets)           
