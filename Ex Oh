@@ -1,0 +1,19 @@
+def ExOh(str)
+
+  # code goes here
+  a=0
+  b =0
+  str.split("").each do |p|
+    if p == "x"
+      a+=1
+    elsif p=="o"
+      b+=1
+    end
+  end
+  return a == b ? true : false
+         
+end
+   
+# keep this function call here 
+# to see how to enter arguments in Ruby scroll down   
+ExOh(STDIN.gets)           
