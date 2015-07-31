@@ -1,0 +1,14 @@
+def NumberAddition(str)
+
+  # code goes here
+  sum=0
+  str.scan(/\d+/).each do |x|
+    sum+=x.to_i
+  end
+  return sum
+  #return a.to_i.reduce(:+)
+end
+   
+# keep this function call here 
+# to see how to enter arguments in Ruby scroll down   
+NumberAddition(STDIN.gets)           
