@@ -1,0 +1,19 @@
+def MeanMode(arr)
+
+  # code goes here
+  p = Array.new
+ 
+  arr.combination(2) do |a, b|
+    if a == b
+      @mode = a
+    end
+  end
+
+  mean = arr.inject(:+) / arr.length 
+ 
+  return mean == @mode ? 1 : 0
+end
+   
+# keep this function call here 
+# to see how to enter arguments in Ruby scroll down   
+MeanMode(STDIN.gets)           
