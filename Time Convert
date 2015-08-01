@@ -1,0 +1,12 @@
+def TimeConvert(num)
+
+  # code goes here
+  hour=0
+  while num>=60
+    num-=60
+    hour+=1
+  end
+  
+  return "#{hour}:#{num}" 
+         
+end
